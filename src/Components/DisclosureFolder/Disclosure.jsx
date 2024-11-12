@@ -28,9 +28,9 @@ const Disclosure = () => {
           I work as an Amazon affiliate.
           <br />I enhance product listings.
           <hr className="m-auto mb-4 h-[4.1px] w-[20%] rounded-xl border-[1.5px] border-slate-400 bg-slate-100" />
-          Amazon covers the commission
+          Amazon Pays me a
           <br />
-          when you purchase through me.
+          commission for helping.
           <hr className="m-auto mb-4 h-[4.1px] w-[20%] rounded-xl border-[1.5px] border-slate-400 bg-slate-100" />
           I appreciate your support.
           <br />
