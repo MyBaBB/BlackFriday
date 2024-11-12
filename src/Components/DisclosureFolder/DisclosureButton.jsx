@@ -1,13 +1,16 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-
+import "./Disclosure.css";
+import "../PWAFolder/WebApp.css";
 const DisclosureButton = () => {
   return (
     <>
       <a href="/Disclosure">
-        <div className="DisclosureButton absolute h-fit w-fit bottom-4 right-8  z-50">
-          <div className="disclosure  relative   h-fit w-fit whitespace-nowrap rounded-xl border-2 border-solid border-slate-900 bg-blue-950 px-[1.1rem] pb-[.4rem] text-[2rem] text-slate-200">
-            <span className="inline-block text-center font-Itim-Regular">
+        <div  className=" "
+              style={{ hover: "none" }}>
+          <div className="disclosureButton  relative flex mx-4 mb-1  font-Changa-Regular
+             text-[20px] text-white whitespace-nowrap  ">
+            <span className="inline-block text-center ">
               Affiliate Disclosure
             </span>
           </div>

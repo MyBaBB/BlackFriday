@@ -1,6 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./WebApp.css";
+import DisclosureButton from "../DisclosureFolder/DisclosureButton";
+
 
 const InstallApp = () => {
   let deferredPrompt;
@@ -20,16 +22,17 @@ const InstallApp = () => {
   const isAppMode = window.matchMedia("(display-mode: standalone)").matches;
 
   return (
-    
-    <div className="absolute bottom-28 m-auto flex w-fit  ">
-    
+    <> 
+     <div className="buttonsHolder relative flex justify-center   ">
+     
      
       <div>
         {!isAppMode && (
           <button
             id="installApp"
             onClick={handleClick}
-            className="installButton relative flex mx-4 mb-1  font-Changa-Regular text-[12px] text-white whitespace-nowrap"
+            className="installButton relative flex mx-4 mb-1  font-Changa-Regular
+             text-[12px] text-white whitespace-nowrap"
           >
             Android/Desk App
           </button>
@@ -37,29 +40,31 @@ const InstallApp = () => {
       </div>
 
 
+     <div > <DisclosureButton/> </div>
 
 
-
-
+    <div>
       <a
         href="https://www.youtube.com/watch?v=AwfKUpq5seE "
-        className="relative"
+        className=""
       >
         <div>
           {!isAppMode && (
             <button
               id="installApp"
               onClick={handleClick}
-              className="installButton relative flex mx-4 mb-1 font-Changa-Regular text-[12px] text-white whitespace-nowrap"
+              className="installButton relative hidden xxs:flex mx-4 mb-1 font-Changa-Regular 
+              text-[12px] text-white whitespace-nowrap"
               style={{ hover: "none" }}
             >
-              IPhone Instructions
+              IPhone Instructions 
             </button>
           )}
         </div>
       </a>
     </div>
-   
+    </div>
+    </>
   );
 };
 
