@@ -1,10 +1,10 @@
-import React from "react";
+ 
 import AmazonArrow from "../../assets/AmazonArrow.jpg";
 const BlackFriday = () => {
   return (
     <>
-      <div className="blackFridayWrapper relative flex-row items-center justify-center 
-      font-ChunkFive-Regular border-2 border-solid border-[#ff9d25]  rounded-2xl p-8">
+      <div className="blackFridayWrapper relative flex-row top-4 w-fit m-auto mb-8 items-center justify-center 
+      font-ChunkFive-Regular border-2 border-solid border-[#ff9d25]  rounded-2xl p-8 bg-black">
         <a href="https://amzn.to/4fLaAFA ">
         <div className="blackFriday flex items-center justify-center  
         font-ChunkFive-Regular text-[#ff9d25]

@@ -1,6 +1,21 @@
 .AffiliateDisclosureHeader {
   text-shadow: 1px 1px 2px white;
 }
+.disclosureButton {
+  text-shadow: 1px 1px 2px #000000;
+  border: 1px solid #0b4f06;
+  border-radius: 7px;
+  background-color: #286e8f;
+  padding: 3px;
+  margin-top: 4px;
+  
+ }
+ 
+.disclosureButton:hover {
+  color: greenyellow;
+  background-color: black;
+}
+
 .disclosure:hover {
   box-shadow: 0px 0px 4px white;
 }
