@@ -1,0 +1,25 @@
+.AffiliateDisclosureHeader {
+  text-shadow: 1px 1px 2px white;
+}
+.disclosure:hover {
+  box-shadow: 0px 0px 4px white;
+}
+.affiliateParagraph {
+  text-shadow: 1px 1px 2px white;
+  box-shadow: 2px 2px 4px gray;
+  line-height: 3.4rem !important;
+}
+.returnButton {
+  box-shadow: 2px 2px 4px gray;
+}
+.returnButton:hover {
+  color: black;
+  background: radial-gradient(ellipse at center, white 0%, slategray 100%);
+  text-shadow: white 1px 1px 2px;
+}
+
+@media screen and (orientation: landscape) and (max-width: 480px) {
+  .affiliateParagraph {
+    font-size: 1.2rem !important;
+  }
+}
