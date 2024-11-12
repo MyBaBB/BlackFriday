@@ -1,10 +1,10 @@
- 
+ import "./BlackFriday.css"
 import AmazonArrow from "../../assets/AmazonArrow.jpg";
 const BlackFriday = () => {
   return (
     <>
       <div className="blackFridayWrapper relative flex-row top-4 w-fit m-auto mb-8 items-center justify-center 
-      font-ChunkFive-Regular border-2 border-solid border-[#ff9d25]  rounded-2xl p-8 bg-black">
+      font-ChunkFive-Regular border-2 border-solid border-[#ff9d25]  rounded-2xl p-8 bg-black hover:scale-105">
         <a href="https://amzn.to/4fLaAFA ">
         <div className="blackFriday flex items-center justify-center  
         font-ChunkFive-Regular text-[#ff9d25]
@@ -19,6 +19,8 @@ const BlackFriday = () => {
          text-5xl leading-[2em]   sm:text-5xl sm:leading-[1.4em] md:text-6xl md:leading-[1.4em] lg:text-8xl lg:leading-[1.4em] ">
           <span className="m-auto">Specials</span>
         </div>
+        <span className="buyGoodies m-auto  text-center text-[#ff9d25]  text-xl block ">Amazon Shopping</span>
+
         <div className="specials flex items-center justify-center">
           <img
             src={AmazonArrow}
