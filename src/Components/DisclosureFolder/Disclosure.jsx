@@ -4,6 +4,7 @@ import "./Disclosure.css";
 import { FaRegHandScissors } from "react-icons/fa";
 import { FaRegHandshake } from "react-icons/fa";
 import { LuRewind } from "react-icons/lu";
+import  Copyright from "../Copyright" 
 const Disclosure = () => {
   return (
     <div className="absolute bottom-0 left-0 right-0 top-0 h-screen w-screen text-4xl">
@@ -12,8 +13,15 @@ const Disclosure = () => {
           <u>Affiliate Disclosure</u>{" "}
         </h1>
       </div>
+<div className="relative  ">
+           <button
+            className="returnButton absolute left-4 top-4 z-50 rounded-full  px-8 py-2 font-DMSerifDisplay-Regular"
+            onClick={() => window.history.back()}>
+            <LuRewind  size={24}/>
+          </button>
+</div>
 
-      <section className="AffiliateDisclosureBody relative flex h-full items-center justify-center border-2 border-solid border-slate-900 bg-gradient-to-b from-slate-400 via-white to-slate-400 p-4 font-LibreBaskerville-Bold text-black shadow-xl">
+      <section className="AffiliateDisclosureBody relative flex-col h-full items-center justify-center border-2 border-solid border-slate-900 bg-gradient-to-b from-slate-400 via-white to-slate-400 p-4 font-LibreBaskerville-Bold text-black shadow-xl">
         <p className="affiliateParagraph m-auto mt-[8.9rem] h-fit w-[80%] rounded-2xl bg-gradient-to-b from-slate-300 via-white to-slate-300 p-8 text-center sm:text-4xl">
           <span className="mb-4 inline-block">
             <span className="inline-block pr-4">
@@ -35,14 +43,12 @@ const Disclosure = () => {
           I appreciate your support.
           <br />
           Thank you!
-          <button
-            className="returnButton absolute left-4 top-4 z-50 rounded-full bg-black px-8 py-2 font-DMSerifDisplay-Regular text-white"
-            onClick={() => window.history.back()}
-          >
-            <LuRewind />
-          </button>
+         
+          
         </p>
+        < Copyright />
       </section>
+     
     </div>
   );
 };

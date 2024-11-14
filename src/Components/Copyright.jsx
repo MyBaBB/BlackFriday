@@ -9,8 +9,8 @@ function Copyright() {
 
  <a href="https://mybabb.com">
  
-      <p className=" whitespace-nowrap absolute right-8 -bottom-12  mr-2 p-1 text-right text-xs text-white
-       z-10 text-[12px]  sm:text-[18px] ">
+      <p className=" whitespace-nowrap absolute right-8 -bottom-12  mr-2 p-1 text-right text-xs text-blue-800
+      -[12px]  sm:text-[18px] z-50">
         <span className="">
           &lt;&lt;&lt;&copy;</span><span className="text-[#FF8200]"> Brett&apos;s </span><span><em>9-14-2023</em>&gt;&gt;&gt;</span>
        
