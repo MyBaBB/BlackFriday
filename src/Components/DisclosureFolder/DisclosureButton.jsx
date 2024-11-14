@@ -8,7 +8,7 @@ const DisclosureButton = () => {
       <a href="/Disclosure">
         <div  className=" "
               style={{ hover: "none" }}>
-          <div className="disclosureButton absolute  bottom-4 right-4 font-Changa-Regular
+          <div className="disclosureButton  relative flex mx-4 mb-1  font-Changa-Regular
              text-[20px] text-white whitespace-nowrap  ">
             <span className="inline-block text-center ">
               Affiliate Disclosure
