@@ -32,6 +32,12 @@
   background: radial-gradient(ellipse at center, white 0%, slategray 100%);
   text-shadow: white 1px 1px 2px;
 }
+.returnButton {
+  color: white;
+  background: black;
+  text-shadow: white 1px 1px 2px;
+  background: radial-gradient(ellipse at center, black 10%, slategray 100%);
+}
 
 @media screen and (orientation: landscape) and (max-width: 480px) {
   .affiliateParagraph {
