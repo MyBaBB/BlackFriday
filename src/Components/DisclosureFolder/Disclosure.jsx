@@ -3,8 +3,9 @@ import React from "react";
 import "./Disclosure.css";
 import { FaRegHandScissors } from "react-icons/fa";
 import { FaRegHandshake } from "react-icons/fa";
-import { LuRewind } from "react-icons/lu";
+
 import  Copyright from "../Copyright" 
+import RewindButton from "./RewindButtonFolder/RewindButton";
  
 const Disclosure = () => {
   return (
@@ -14,12 +15,8 @@ const Disclosure = () => {
           <u>Affiliate Disclosure</u>{" "}
         </h1>
       </div>
-<div className="relative  ">
-           <button
-            className="returnButton absolute left-4 top-4 z-50 rounded-full  px-8 py-2 font-DMSerifDisplay-Regular " 
-            onClick={() => window.history.back()}>
-            <LuRewind  size={24}/>
-          </button>
+<div >
+     < RewindButton />      
 </div>
 
       <section className="AffiliateDisclosureBody relative flex-col h-screen items-center justify-center 

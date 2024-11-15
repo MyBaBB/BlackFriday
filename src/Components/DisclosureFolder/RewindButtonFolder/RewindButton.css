@@ -1,0 +1,65 @@
+
+
+
+.returnButton {
+    box-shadow: 2px 2px 4px gray;
+  }
+  .returnButton:hover {
+    color: black;
+    background: radial-gradient(ellipse at center, white 0%, slategray 100%);
+    text-shadow: white 1px 1px 2px;
+  }
+  .returnButton {
+    color: white;
+    background: black;
+    text-shadow: white 1px 1px 2px;
+    background: radial-gradient(ellipse at center, black 10%, slategray 100%);
+  }
+.dataToolTipGoBack:hover::before,
+.dataToolTipGoBack:hover::after {
+  --scale: 1;
+}
+.dataToolTipGoBack::before {
+  content: "";
+  color: black;
+  background: radial-gradient(ellipse at center, white 0%, slategray 100%);
+  text-shadow: white 1px 1px 2px;
+  
+  font-family: "Itim-Regular";
+  font-weight: 900;
+  font-size: 18px;
+  width: max-content;
+  position: absolute;
+  content: attr(data-tool-tip);
+  padding: 0.1em 0.1em 0.2em 0.1em;
+  transform: translateX(72%) scale(var(--scale));
+  margin: 0 auto;
+  transform-origin: left center;
+  transition: ease-in 0.2s;
+  top: 1.2rem;
+  left: 2.2rem;
+  border-radius: 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  --scale: 0;
+  z-index: 2;
+  box-shadow: 0px 1.5px 4px  rgba(0, 0, 0, 0.5);
+}
+.dataToolTipGoBack::after {
+      content: "";
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      padding: 0em 0.1em 0.1em 0em;
+      transform: translateX(-51%) scale(var(--scale));
+      transform-origin: right center;
+      transition: 0.2s;
+      left: 8.7rem;
+      bottom: -4rem;
+      border: 13px solid transparent;
+      border-right: black 10px solid;
+      
+      --scale: 0;
+      z-index: 1;
+  }  
+  
